@@ -7,6 +7,7 @@ import com.example.employee_app.view.EmployeeActivity
 import com.example.getapp.RetroActivity
 import com.example.myretrofitapplication.databinding.ActivityMainBinding
 import com.example.newsapp.NewsActivity
+import com.example.quotes_app.QuotesActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -15,13 +16,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        countryName()
+        employeeName()
     }
 
-    private fun countryName() {
-        binding.CountryImageView.setOnClickListener {
-            val intent = Intent(this,EmployeeActivity::class.java)
+    private fun employeeName() {
+        binding.EmployeeTextView.setOnClickListener {
+            val intent = Intent(this,QuotesActivity::class.java)
             startActivity(intent)
+            finish()
+
         }
     }
 }

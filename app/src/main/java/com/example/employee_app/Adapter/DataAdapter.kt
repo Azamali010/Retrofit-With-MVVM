@@ -22,9 +22,9 @@ class DataAdapter() : RecyclerView.Adapter<DataAdapter.DataViewHolder>() {
     override fun onBindViewHolder(holder: DataViewHolder, position: Int) {
 //        holder.bind(dataList!![position])
 
-        holder.binding.bodytextView.text = "Name: "+dataList!![position].employeeName
-        holder.binding.idtextView.text = dataList!![position].employeeAge.toString()
-        holder.binding.titleTextView.text = dataList!![position].employeeSalary.toString()
+        holder.binding.bodytextView.text = "Name: " +dataList!![position].employeeName
+        holder.binding.idtextView.text = "AGE: " +dataList!![position].employeeAge.toString()
+        holder.binding.titleTextView.text = "Salary: " + dataList!![position].employeeSalary.toString()
 
     }
 

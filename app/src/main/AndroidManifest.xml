@@ -15,6 +15,9 @@
         android:theme="@style/Theme.MyRetrofitApplication"
         tools:targetApi="31">
         <activity
+            android:name="com.example.quotes_app.QuotesActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.employee_app.view.EmployeeActivity"
             android:exported="false" />
         <activity

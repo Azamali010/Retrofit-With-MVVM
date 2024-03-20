@@ -1,62 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
-    <com.google.android.material.card.MaterialCardView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
 
+        <TextView
+            android:id="@+id/Employee_textView"
+            android:layout_width="154dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="28dp"
+            android:text="ALL EMPLOYEE"
+            android:background="#001EC5"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
 
-<!--        <com.google.android.material.imageview.ShapeableImageView-->
-<!--            android:id="@+id/imageView"-->
-<!--            android:layout_width="142dp"-->
-<!--            android:layout_height="115dp"-->
-<!--            android:layout_marginStart="36dp"-->
-<!--            android:layout_marginTop="40dp"-->
-<!--            android:layout_marginBottom="40dp"-->
-<!--            android:src="@drawable/topviewworld"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            app:layout_constraintVertical_bias="0.0" />-->
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="300dp">
-
-            <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/Country_imageView"
-                android:layout_width="134dp"
-                android:layout_height="126dp"
-                android:layout_marginStart="16dp"
-                android:textAlignment="center"
-                android:scaleType="centerCrop"
-                android:layout_marginTop="16dp"
-                android:src="@drawable/topviewworld"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="114dp"
-                android:layout_height="29dp"
-                android:textStyle="bold"
-                android:textSize="18sp"
-                android:padding="3dp"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:layout_marginTop="8dp"
-                android:text="ALL FLAGS"
-                app:layout_constraintEnd_toEndOf="@+id/Country_imageView"
-                app:layout_constraintStart_toStartOf="@+id/Country_imageView"
-                app:layout_constraintTop_toBottomOf="@+id/Country_imageView" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </com.google.android.material.card.MaterialCardView>
-
-</ScrollView>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
