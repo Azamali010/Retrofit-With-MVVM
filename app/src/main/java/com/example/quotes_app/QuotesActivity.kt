@@ -7,6 +7,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.myretrofitapplication.R
 import com.example.myretrofitapplication.databinding.ActivityQuotesBinding
 import com.example.quotes_app.api.QuoteService
+import com.example.quotes_app.application.QuoteApplication
 import com.example.quotes_app.viewmodel.MainViewModelFactory
 import com.example.quotes_app.viewmodel.QuotesViewModel
 import com.example.quotes_app.repository.QuotesRepository
@@ -20,8 +21,9 @@ class QuotesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quotes)
 
-        val quoteService = RetrofitHelper.getInstance().create(QuoteService::class.java)
-        val repository = QuotesRepository(quoteService)
+        val repository = (application as QuoteApplication).quotesRepository
+
+
         quotesViewModel = ViewModelProvider(this,
             MainViewModelFactory(repository)
         )[QuotesViewModel::class.java]

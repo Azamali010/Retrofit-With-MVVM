@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun employeeName() {
         binding.EmployeeTextView.setOnClickListener {
-            val intent = Intent(this,QuotesActivity::class.java)
+            val intent = Intent(this,EmployeeActivity::class.java)
             startActivity(intent)
             finish()
 

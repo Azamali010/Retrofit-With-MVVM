@@ -22,6 +22,13 @@ class EmployeeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        getEmpData()
+
+
+    }
+
+    @SuppressLint("NotifyDataSetChanged")
+    private fun getEmpData() {
         viewModel =ViewModelProvider(this)[EmployeeVM::class.java]
         viewModel.loadEMP()
 

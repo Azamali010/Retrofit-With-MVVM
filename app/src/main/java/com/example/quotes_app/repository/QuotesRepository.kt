@@ -17,7 +17,8 @@ class QuotesRepository(
 
     suspend fun getQuotes(page :Int){
         val result = quoteService.getQuotes(page)
-        if (result?.body() != null){
+        if (result.body() != null){
+            quotesDataBase.quotesDao().addQuotes(result.body()!!.results)
             quotesLiveData.postValue(result.body())
         }
     }

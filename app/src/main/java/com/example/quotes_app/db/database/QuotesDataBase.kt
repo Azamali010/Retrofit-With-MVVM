@@ -23,7 +23,7 @@ abstract class QuotesDataBase: RoomDatabase() {
                 synchronized(this){
                     INSTANCE = Room.databaseBuilder(context,
                         QuotesDataBase::class.java,
-                        "quotesDB")
+                        "quoteDB")
                         .build()
                 }
 
