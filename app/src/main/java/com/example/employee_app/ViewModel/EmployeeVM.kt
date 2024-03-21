@@ -14,6 +14,7 @@ class EmployeeVM : ViewModel() {
     private val _emp = MutableLiveData<EmployeeDataModel>()
 
 
+
     val emp: LiveData<EmployeeDataModel>
         get() = _emp
 
@@ -24,4 +25,6 @@ class EmployeeVM : ViewModel() {
             _emp.postValue(result)
         }
     }
+
+
 }

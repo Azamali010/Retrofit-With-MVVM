@@ -7,6 +7,7 @@ class EmployeeRepo {
 
     private val apiService = RetrofitObject.apiService
 
+
     suspend fun getEmployee(): EmployeeDataModel{
         return apiService.getEmployees()
     }
