@@ -1,9 +1,6 @@
 package com.example.quotes_app.model
 
 
-
-
-
 data class QuotesList(
     val count: Int,
     val totalCount: Int,

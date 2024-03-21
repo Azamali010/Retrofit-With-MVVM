@@ -14,7 +14,6 @@ class EmployeeVM : ViewModel() {
     private val _emp = MutableLiveData<EmployeeDataModel>()
 
 
-
     val emp: LiveData<EmployeeDataModel>
         get() = _emp
 
