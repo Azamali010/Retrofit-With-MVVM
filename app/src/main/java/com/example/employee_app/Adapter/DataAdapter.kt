@@ -1,5 +1,6 @@
 package com.aarafrao.retrofitmvvm.Adapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -19,6 +20,7 @@ class DataAdapter() : RecyclerView.Adapter<DataAdapter.DataViewHolder>() {
         return DataViewHolder(binding)
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: DataViewHolder, position: Int) {
 //        holder.bind(dataList!![position])
 

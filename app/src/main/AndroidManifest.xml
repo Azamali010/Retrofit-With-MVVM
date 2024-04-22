@@ -17,7 +17,8 @@
         tools:targetApi="31">
         <activity
             android:name="com.example.employee_app.MemesApp.MemesAppActivity"
-            android:exported="false" />
+            android:exported="false"
+            tools:ignore="MissingClass" />
         <activity
             android:name="com.example.quotes_app.QuotesActivity"
             android:exported="false" />
